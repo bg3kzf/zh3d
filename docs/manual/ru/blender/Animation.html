@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <title>Verge3D для Blender: Анимация - Soft8Soft</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Данная страница содержит информацию о типах анимации Blender поддерживаемых в Verge3D.">
+    <base href="../../../">
+    <script src="page.js"></script>
+    <link type="text/css" rel="stylesheet" href="page.css">
+  
+            <link rel="canonical" href="https://www.soft8soft.com/docs/manual/ru/blender/Animation.html">
+
+            <meta property="og:type" content="article">
+            <meta property="og:title" content="Verge3D для Blender: Анимация - Soft8Soft">
+            <meta property="og:description" content="Данная страница содержит информацию о типах анимации Blender поддерживаемых в Verge3D.">
+            <meta property="og:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+            <meta property="og:url" content="https://www.soft8soft.com/docs/manual/ru/blender/Animation.html">
+            <meta property="og:site_name" content="Soft8Soft">
+            <meta property="og:locale" content="en_US">
+
+            <meta property="article:author" content="https://www.facebook.com/soft8soft">
+
+            <meta property="article:tag" content="Verge3D">
+            <meta property="article:tag" content="WebGL">
+            <meta property="article:tag" content="3D">
+            <meta property="article:tag" content="ThreeJS">
+            <meta property="article:tag" content="interactive">
+            <meta property="article:tag" content="realtime">
+            <meta property="article:tag" content="3dweb">
+            <meta property="article:tag" content="web3d">
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Verge3D для Blender: Анимация - Soft8Soft">
+            <meta name="twitter:description" content="Данная страница содержит информацию о типах анимации Blender поддерживаемых в Verge3D.">
+            <meta name="twitter:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta name="twitter:creator" content="@soft8soft">
+        
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+            <!-- favicons from realfavicongenerator.net -->
+            <link rel="apple-touch-icon" sizes="180x180" href="files/icons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="files/icons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="files/icons/favicon-16x16.png">
+            <link rel="manifest" href="files/icons/manifest.json">
+            <link rel="mask-icon" href="files/icons/safari-pinned-tab.svg" color="#5bbad5 ">
+        <script type="application/ld+json">[
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/insert-keyframe.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/skeletal-animation.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/shape-key-animation.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/shape-key-animation-insert-keyframe.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/node-material-animation.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/node-material-animation-insert-keyframes.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-animation-animate-param.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/blender-verge3d-animation-settings.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/interpolation.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/animation-blender/frame-rate.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-animation.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ]</script></head>
+
+  <body><nav id="panel" class="collapsed">
+          <h1><a href="manual/ru/index.html">Руководство пользователя Verge3D</a></h1>
+
+          <a id="expandButton" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="filterBlock">
+            <input type="text" id="filterInput" placeholder="Type to filter" autocapitalize="off" spellcheck="false">
+            <a href="#" id="clearFilterButton">x</a>
+          </div>
+
+          <div id="content"><div><h2>Начало работы</h2><ul id="Начало_работы"><li><a href="manual/ru/introduction/Beginners-Guide.html" id="Начало_работы_Руководство_для_начинающих">Руководство для начинающих</a></li><li><a href="manual/ru/introduction/Workflow.html" id="Начало_работы_Рабочий_процесс">Рабочий процесс</a></li><li><a href="manual/ru/introduction/App-Manager.html" id="Начало_работы_App_Manager_(менеджер_проектов)">App Manager (менеджер проектов)</a></li><li><a href="manual/ru/introduction/Puzzles-Visual-Logic-Editor.html" id="Начало_работы_Puzzles_(визуальный_редактор_логики)">Puzzles (визуальный редактор логики)</a></li><li><a href="manual/ru/introduction/Features.html" id="Начало_работы_Характеристики_Verge3D">Характеристики Verge3D</a></li><li><a href="manual/ru/introduction/Project-Structure.html" id="Начало_работы_Структура_проектов">Структура проектов</a></li><li><a href="manual/ru/introduction/Updating.html" id="Начало_работы_Обновление_Verge3D">Обновление Verge3D</a></li><li><a href="manual/ru/introduction/FAQ.html" id="Начало_работы_FAQ">FAQ</a></li><li><a href="manual/ru/introduction/Useful-links.html" id="Начало_работы_Полезные_ссылки">Полезные ссылки</a></li></ul></div><div><h2>Основные темы</h2><ul id="Основные_темы"><li><a href="manual/ru/introduction/Optimizing-WebGL-performance.html" id="Основные_темы_Методы_оптимизации">Методы оптимизации</a></li><li><a href="manual/ru/introduction/Asset-compression.html" id="Основные_темы_Сжатие_ассетов">Сжатие ассетов</a></li><li><a href="manual/ru/introduction/HTML-based-user-interfaces.html" id="Основные_темы_Интерфейс_на_основе_HTML">Интерфейс на основе HTML</a></li><li><a href="manual/ru/introduction/Text-Rendering.html" id="Основные_темы_Визуализация_текста">Визуализация текста</a></li><li><a href="manual/ru/introduction/AR-VR-development.html" id="Основные_темы_AR/VR-разработка">AR/VR-разработка</a></li><li><a href="manual/ru/introduction/Physics-Guide.html" id="Основные_темы_Руководство_по_физике">Руководство по физике</a></li><li><a href="manual/ru/introduction/Personalizing-Verge3D-Apps.html" id="Основные_темы_Персонализация_приложений">Персонализация приложений</a></li><li><a href="manual/ru/introduction/Wordpress-Plugin.html" id="Основные_темы_WordPress-плагин">WordPress-плагин</a></li><li><a href="manual/ru/introduction/Using-JavaScript.html" id="Основные_темы_Использование_JavaScript">Использование JavaScript</a></li><li><a href="manual/ru/introduction/Creating-Desktop-Apps.html" id="Основные_темы_Создание_десктопных_приложений">Создание десктопных приложений</a></li><li><a href="manual/ru/introduction/Creating-Mobile-Apps.html" id="Основные_темы_Создание_мобильных_приложений">Создание мобильных приложений</a></li><li><a href="manual/ru/introduction/Performance-Bottlenecks.html" id="Основные_темы_Поиск_проблем_с_производительностью">Поиск проблем с производительностью</a></li><li><a href="manual/ru/introduction/Hardware-Related-Issues.html" id="Основные_темы_Исправление_неполадок">Исправление неполадок</a></li><li><a href="manual/ru/introduction/Testing-Mobile-Browsers.html" id="Основные_темы_Тестирование_в_мобильных_браузерах">Тестирование в мобильных браузерах</a></li></ul></div><div><h2>Руководство для 3D-художника Blender</h2><ul id="Руководство_для_3D-художника_Blender"><li><a href="manual/ru/blender/Beginners-Guide.html" id="Руководство_для_3D-художника_Blender_Руководство_для_начинающих">Руководство для начинающих</a></li><li><a href="manual/ru/blender/Installation.html" id="Руководство_для_3D-художника_Blender_Установка">Установка</a></li><li><a href="manual/ru/blender/Material-System.html" id="Руководство_для_3D-художника_Blender_Обзор_системы_материалов">Обзор системы материалов</a></li><li><a href="manual/ru/blender/Lighting-and-Rendering.html" id="Руководство_для_3D-художника_Blender_Освещение_и_рендеринг">Освещение и рендеринг</a></li><li><a href="manual/ru/blender/Camera.html" id="Руководство_для_3D-художника_Blender_Камера">Камера</a></li><li><a href="manual/ru/blender/Shader-Nodes-Reference.html" id="Руководство_для_3D-художника_Blender_Обзор_шейдерных_нод">Обзор шейдерных нод</a></li><li><a href="manual/ru/blender/Animation.html" id="Руководство_для_3D-художника_Blender_Анимация">Анимация</a></li><li><a href="manual/ru/blender/Morphing.html" id="Руководство_для_3D-художника_Blender_Ключи_формы_(морфинг)">Ключи формы (морфинг)</a></li><li><a href="manual/ru/blender/Shadows.html" id="Руководство_для_3D-художника_Blender_Тени">Тени</a></li><li><a href="manual/ru/blender/Transparency.html" id="Руководство_для_3D-художника_Blender_Прозрачность">Прозрачность</a></li><li><a href="manual/ru/blender/GLTF-Materials.html" id="Руководство_для_3D-художника_Blender_glTF-материалы">glTF-материалы</a></li><li><a href="manual/ru/blender/Object-Constraints.html" id="Руководство_для_3D-художника_Blender_Констрейнты">Констрейнты</a></li><li><a href="manual/ru/blender/Material-Library.html" id="Руководство_для_3D-художника_Blender_Библиотеки_материалов">Библиотеки материалов</a></li></ul></div><div><h2>Руководство для 3D-художника 3ds Max</h2><ul id="Руководство_для_3D-художника_3ds_Max"><li><a href="manual/ru/max/Beginners-Guide.html" id="Руководство_для_3D-художника_3ds_Max_Руководство_для_начинающих">Руководство для начинающих</a></li><li><a href="manual/ru/max/Installation.html" id="Руководство_для_3D-художника_3ds_Max_Установка">Установка</a></li><li><a href="manual/ru/max/Material-System.html" id="Руководство_для_3D-художника_3ds_Max_Обзор_системы_материалов">Обзор системы материалов</a></li><li><a href="manual/ru/max/Lighting-and-Rendering.html" id="Руководство_для_3D-художника_3ds_Max_Освещение_и_рендеринг">Освещение и рендеринг</a></li><li><a href="manual/ru/max/Camera.html" id="Руководство_для_3D-художника_3ds_Max_Камера">Камера</a></li><li><a href="manual/ru/max/Materials-Maps-Reference.html" id="Руководство_для_3D-художника_3ds_Max_Материалы_и_текстурные_карты">Материалы и текстурные карты</a></li><li><a href="manual/ru/max/Animation.html" id="Руководство_для_3D-художника_3ds_Max_Анимация">Анимация</a></li><li><a href="manual/ru/max/Morphing.html" id="Руководство_для_3D-художника_3ds_Max_Морфинг">Морфинг</a></li><li><a href="manual/ru/max/Shadows.html" id="Руководство_для_3D-художника_3ds_Max_Тени">Тени</a></li><li><a href="manual/ru/max/Transparency.html" id="Руководство_для_3D-художника_3ds_Max_Прозрачность">Прозрачность</a></li><li><a href="manual/ru/max/Viewport-Render-Preview.html" id="Руководство_для_3D-художника_3ds_Max_Вьюпорт_и_предпросмотр_рендера">Вьюпорт и предпросмотр рендера</a></li><li><a href="manual/ru/max/GLTF-Materials.html" id="Руководство_для_3D-художника_3ds_Max_glTF-материалы">glTF-материалы</a></li><li><a href="manual/ru/max/Animation-Constraints.html" id="Руководство_для_3D-художника_3ds_Max_Анимационные_констрейнты">Анимационные констрейнты</a></li><li><a href="manual/ru/max/Material-Library.html" id="Руководство_для_3D-художника_3ds_Max_Библиотеки_материалов">Библиотеки материалов</a></li></ul></div><div><h2>Руководство для 3D-художника Maya</h2><ul id="Руководство_для_3D-художника_Maya"><li><a href="manual/ru/maya/Beginners-Guide.html" id="Руководство_для_3D-художника_Maya_Руководство_для_начинающих">Руководство для начинающих</a></li><li><a href="manual/ru/maya/Installation.html" id="Руководство_для_3D-художника_Maya_Установка">Установка</a></li><li><a href="manual/ru/maya/Materials.html" id="Руководство_для_3D-художника_Maya_Материалы_и_текстурные_ноды">Материалы и текстурные ноды</a></li><li><a href="manual/ru/maya/Lighting-and-Rendering.html" id="Руководство_для_3D-художника_Maya_Освещение_и_рендеринг">Освещение и рендеринг</a></li><li><a href="manual/ru/maya/Camera.html" id="Руководство_для_3D-художника_Maya_Камера">Камера</a></li><li><a href="manual/ru/maya/Shadows.html" id="Руководство_для_3D-художника_Maya_Тени">Тени</a></li><li><a href="manual/ru/maya/Animation.html" id="Руководство_для_3D-художника_Maya_Анимация">Анимация</a></li><li><a href="manual/ru/maya/Blend-Shapes.html" id="Руководство_для_3D-художника_Maya_Морфинг_(Blend_Shapes)">Морфинг (Blend Shapes)</a></li><li><a href="manual/ru/maya/Transparency.html" id="Руководство_для_3D-художника_Maya_Прозрачность">Прозрачность</a></li><li><a href="manual/ru/maya/GLTF-Materials.html" id="Руководство_для_3D-художника_Maya_glTF-материалы">glTF-материалы</a></li><li><a href="manual/ru/maya/Object-Constraints.html" id="Руководство_для_3D-художника_Maya_Констрейнты">Констрейнты</a></li><li><a href="manual/ru/maya/Material-Library.html" id="Руководство_для_3D-художника_Maya_Библиотеки_материалов">Библиотеки материалов</a></li></ul></div><div><h2>Руководство по Puzzles</h2><ul id="Руководство_по_Puzzles"><li><a href="manual/ru/puzzles/Initialization.html" id="Руководство_по_Puzzles_Initialization">Initialization</a></li><li><a href="manual/ru/puzzles/Events.html" id="Руководство_по_Puzzles_Events">Events</a></li><li><a href="manual/ru/puzzles/Selectors.html" id="Руководство_по_Puzzles_Selectors">Selectors</a></li><li><a href="manual/ru/puzzles/Objects.html" id="Руководство_по_Puzzles_Objects">Objects</a></li><li><a href="manual/ru/puzzles/Materials.html" id="Руководство_по_Puzzles_Materials">Materials</a></li><li><a href="manual/ru/puzzles/Animation.html" id="Руководство_по_Puzzles_Animation_(+Constraints)">Animation (+Constraints)</a></li><li><a href="manual/ru/puzzles/Camera.html" id="Руководство_по_Puzzles_Cameras/Lights">Cameras/Lights</a></li><li><a href="manual/ru/puzzles/Scenes.html" id="Руководство_по_Puzzles_Scenes">Scenes</a></li><li><a href="manual/ru/puzzles/Time.html" id="Руководство_по_Puzzles_Time">Time</a></li><li><a href="manual/ru/puzzles/HTML.html" id="Руководство_по_Puzzles_HTML">HTML</a></li><li><a href="manual/ru/puzzles/AR_VR.html" id="Руководство_по_Puzzles_AR/VR">AR/VR</a></li><li><a href="manual/ru/puzzles/Sound.html" id="Руководство_по_Puzzles_Audio/Video">Audio/Video</a></li><li><a href="manual/ru/puzzles/Physics.html" id="Руководство_по_Puzzles_Physics">Physics</a></li><li><a href="manual/ru/puzzles/Postprocessing.html" id="Руководство_по_Puzzles_Post-processing">Post-processing</a></li><li><a href="manual/ru/puzzles/Logic.html" id="Руководство_по_Puzzles_Logic">Logic</a></li><li><a href="manual/ru/puzzles/Loops.html" id="Руководство_по_Puzzles_Loops">Loops</a></li><li><a href="manual/ru/puzzles/Text.html" id="Руководство_по_Puzzles_Text">Text</a></li><li><a href="manual/ru/puzzles/Numbers.html" id="Руководство_по_Puzzles_Numbers">Numbers</a></li><li><a href="manual/ru/puzzles/Lists.html" id="Руководство_по_Puzzles_Lists">Lists</a></li><li><a href="manual/ru/puzzles/Dictionaries.html" id="Руководство_по_Puzzles_Dictionaries">Dictionaries</a></li><li><a href="manual/ru/puzzles/Variables.html" id="Руководство_по_Puzzles_Variables">Variables</a></li><li><a href="manual/ru/puzzles/Procedures.html" id="Руководство_по_Puzzles_Procedures">Procedures</a></li><li><a href="manual/ru/puzzles/System.html" id="Руководство_по_Puzzles_System">System</a></li><li><a href="manual/ru/puzzles/ECommerce.html" id="Руководство_по_Puzzles_E-Commerce">E-Commerce</a></li><li><a href="manual/ru/puzzles/Advanced.html" id="Руководство_по_Puzzles_Advanced">Advanced</a></li><li><a href="manual/ru/puzzles/Library.html" id="Руководство_по_Puzzles_Библиотека">Библиотека</a></li><li><a href="manual/ru/puzzles/Plugins.html" id="Руководство_по_Puzzles_Плагины">Плагины</a></li></ul></div></div>
+        </nav><article>
+
+    <h1>Анимация / Blender</h1>
+
+    <p>
+    Эта страница содержит информацию о типах анимации Blender, которые могут быть использованы в Verge 3D, а также о поддерживаемых параметрах воспроизведения и средствах интерактивного управления анимацией.
+    </p>
+
+
+    <!-- TOC -->
+<ul><li><a href="manual/ru/blender/Animation.html#Setting_Up_Blender">Настройки в Blender</a><ul><li><a href="manual/ru/blender/Animation.html#Whole_Object_Animation">Объектная анимация</a></li><li><a href="manual/ru/blender/Animation.html#Skeletal_Animation">Скелетная анимация</a></li><li><a href="manual/ru/blender/Animation.html#Shape_Key_Animation">Ключи формы или морфинг-анимация</a></li><li><a href="manual/ru/blender/Animation.html#Material_Animation">Анимация материалов</a></li><li><a href="manual/ru/blender/Animation.html#Procedural_Animation">Процедурная анимация</a></li></ul></li><li><a href="manual/ru/blender/Animation.html#Playback_Options">Параметры воспроизведения</a><ul><li><a href="manual/ru/blender/Animation.html#Verge3D_Per_Object_Settings">Настройки Verge3D для каждого объекта</a></li><li><a href="manual/ru/blender/Animation.html#Interpolation">Интерполяция</a></li><li><a href="manual/ru/blender/Animation.html#Frame_Rate">Частота смены кадров</a></li></ul></li><li><a href="manual/ru/blender/Animation.html#Animation_Control_with_Puzzles">Контроль анимации с помощью Puzzles</a></li></ul><!-- /TOC -->
+
+
+
+    <p><a href="manual/ru/blender/Animation.html#Setting_Up_Blender" id="Setting_Up_Blender" class="permalink">#</a></p>
+
+    <h2>Настройки в Blender</h2>
+
+
+    <p><a href="manual/ru/blender/Animation.html#Whole_Object_Animation" id="Whole_Object_Animation" class="permalink">#</a></p>
+
+    <h3>Объектная анимация</h3>
+
+    <p>
+    Ключевые кадры анимации могут быть добавлены в Blender стандартным путём: Object &gt; Animation &gt; Insert Keyframe... menu (или при нажатии горячей клавиши <strong>I</strong>), после этого, на временной шкале выбирается другой кадр, объект перемещается/вращается/масштабируется и добавляется новый ключевой кадр для этих изменений.
+    </p>
+
+    <img src="files/animation-blender/insert-keyframe.jpg" alt="Inserting keyframes in Verge3D for Blender" style="max-width: 1000px">
+
+
+    <p>Ознакомьтесь со следующим обучающим видео:</p>
+
+    <iframe class="video-480p" src="https://www.youtube.com/embed/VkjEfSmI2xM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
+
+    <p><a href="manual/ru/blender/Animation.html#Skeletal_Animation" id="Skeletal_Animation" class="permalink">#</a></p>
+
+    <h3>Скелетная анимация</h3>
+
+    <p>
+      Прискиннивание объекта в Blender выполняется с использованием <a href="https://docs.blender.org/manual/ru/latest/animation/armatures/index.html" target="_blank">Armature</a>. Verge3D поддерживает максимум 4 веса на одну кость (взаимодействовать с костью будут только 4 веса с самым большим значением влияния, остальные будут проигнорированы). Кости могут быть анимированы в <strong>Pose Mode</strong> (Ctrl+Tab), используя Pose &gt; Animation &gt; Insert Keyframe... menu (или горячая клавиша <strong>I</strong>), после чего, на временной шкале выбирается другой кадр, кость перемещается/вращается/масштабируется и с данными изменениями добавляется новый ключевой кадр.
+    </p>
+
+    <img src="files/animation-blender/skeletal-animation.jpg" alt="Inserting keyframes for skeletal animation in Verge3D for Blender" style="max-width: 1000px">
+
+
+    <p><a href="manual/ru/blender/Animation.html#Shape_Key_Animation" id="Shape_Key_Animation" class="permalink">#</a></p>
+
+    <h3>Ключи формы или морфинг-анимация</h3>
+
+    <p>
+      В Blender вы можете добавить <b>ключи формы</b> к объекту стандартным путём (для получения более подробной информации пройдите по <a href="manual/ru/blender/Morphing.html">ссылке</a>).
+    </p>
+
+    <img src="files/animation-blender/shape-key-animation.jpg" alt="Shape key animation in Verge3D for Blender" style="max-width: 889px">
+
+    <p>
+    Значения ключей формы могут быть анимированы в Blender нажатием ПКМ на Value и выборе <strong>Insert Keyframe</strong> (или при наведении на него курсора и нажатии горячей клавиши <strong>I</strong>), затем выбирается другой кадр на временной шкале, в поле ввода устанавливается новое значение Value и добавляется новый анимационный ключ для этого значения.
+    </p>
+
+    <img src="files/animation-blender/shape-key-animation-insert-keyframe.jpg" alt="Inserting keyframes for shape key animation in Verge3D for Blender" style="max-width: 199px">
+
+
+    <p><a href="manual/ru/blender/Animation.html#Material_Animation" id="Material_Animation" class="permalink">#</a></p>
+
+    <h3>Анимация материалов</h3>
+
+    <p>
+    В отличие от Blender, в Verge 3D можно анимировать только определённый параметр материала, подключив к нему ноду <strong>Value</strong> или <strong>RGB</strong>.
+    </p>
+
+    <img src="files/animation-blender/node-material-animation.jpg" alt="Node material animation in Verge3D for Blender" style="max-width: 1000px">
+
+    <p>
+    Значения цветов заданные этими нодами могут быть анимированы в Blender нажатием ПКМ на соответсвующую ноду (или при наведении на него курсора и нажатии горячей клавиши <strong>I</strong>), затем выбирается другой кадр на временной шкале, устанавливается новое значение или цвет, которым добавляется анимационный ключ.
+    </p>
+
+    <img src="files/animation-blender/node-material-animation-insert-keyframes.jpg" alt="Inserting keyframes for node material animation in Verge3D for Blender" style="max-width: 200px">
+
+
+    <p><a href="manual/ru/blender/Animation.html#Procedural_Animation" id="Procedural_Animation" class="permalink">#</a></p>
+
+    <h3>Процедурная анимация</h3>
+
+    <p>
+    Вместо того, чтобы проигрывать анимацию созданную в Blender, вы можете использовать Puzzles или JavaScript чтобы изменить координаты или другие параметры. В особенности <a href="manual/ru/puzzles/Animation.html#animate_param">animate param</a> puzzle (основанный на Tween.js library) является удобным способом создания собственной анимации на лету.
+    </p>
+
+    <img src="files/puzzles/puzzles-animation-animate-param.jpg" alt="Using the animate param puzzle to create animation in Verge3D for Blender" style="max-width: 1000px">
+
+
+
+    <p><a href="manual/ru/blender/Animation.html#Playback_Options" id="Playback_Options" class="permalink">#</a></p>
+
+    <h2>Параметры воспроизведения</h2>
+
+
+    <p><a href="manual/ru/blender/Animation.html#Verge3D_Per_Object_Settings" id="Verge3D_Per_Object_Settings" class="permalink">#</a></p>
+
+    <h3>Настройки Verge3D для каждого объекта</h3>
+
+    <p>
+    Каждому объекту в Blender назначаются настройки Verge 3D, включая настройки воспроизведения анимации.
+    </p>
+
+    <img src="files/animation-blender/blender-verge3d-animation-settings.jpg" alt="Verge3D for Blender animation settings panel" style="max-width: 403px">
+
+    <p>
+    Настройки анимации:
+    </p>
+    <p>
+    </p><ul>
+    <li>
+    <strong>Auto Start</strong> - отвечает за начало проигрывания анимации при загрузке сцены.
+    </li>
+    <li>
+    <strong>Loop Mode</strong> - режимы воспроизведения: <strong>Repeat</strong> - проигрывает анимацию от начала до конца, затем повторяет, <strong>Once</strong> - проигрывает один раз, затем останавливается, <strong>Ping Pong</strong> - проигрывает от начала до конца, затем воспроизводит анимацию в обратную сторону.
+    </li>
+    <li>
+    <strong>Repeat Infinitely</strong> - если необходимо, чтобы анимация объекта проигрывалась бесконечно. Действительно только для режимов <strong>Repeat</strong> и <strong>Ping Pong</strong>.
+    </li>
+    <li>
+    <strong>Repeat Count</strong> - отвечает за количество раз, которое будет проиграна анимация. Действительно только для <strong>Repeat</strong> и <strong>Ping Pong</strong>, если режим <strong>Repeat Infinitely</strong> отключен.
+    </li>
+    <li>
+    <strong>Offset</strong> - какое количество кадров должно быть пропущено перед началом воспроизведения анимации.
+    </li>
+    </ul>
+    <p></p>
+
+
+    <p><a href="manual/ru/blender/Animation.html#Interpolation" id="Interpolation" class="permalink">#</a></p>
+
+    <h3>Интерполяция</h3>
+
+    <p>
+    Меню переключения интерполяции между ключевыми кадрами вызывается нажатием ПКМ в окне временной шкалы в Blender (горячая клавиша <strong>T</strong>).
+    </p>
+
+    <img src="files/animation-blender/interpolation.jpg" alt="Keyframe interpolation in Verge3D for Blender" style="max-width: 1000px">
+
+    <p>
+    Verge 3D поддерживет все режимы интерполяции доступные в Blender.
+    </p>
+
+
+    <p><a href="manual/ru/blender/Animation.html#Frame_Rate" id="Frame_Rate" class="permalink">#</a></p>
+
+    <h3>Частота смены кадров</h3>
+
+    <p>
+    Значение частоты смены кадров (по умолчанию - 24 fps) влияет на скорость воспроизведения и может быть изменено во вкладке <strong>Output Properties</strong>.
+    </p>
+
+    <img src="files/animation-blender/frame-rate.jpg" alt="Frame rate selector in Verge3D for Blender" style="max-width: 389px">
+
+
+    <p><a href="manual/ru/blender/Animation.html#Animation_Control_with_Puzzles" id="Animation_Control_with_Puzzles" class="permalink">#</a></p>
+
+    <h2>Контроль анимации с помощью Puzzles</h2>
+
+    <p>
+    Вы можете использовать <b>animation puzzles</b> для воспроизведения предварительно созданной анимации (для получения более подробной информации пройдите по <a href="manual/ru/puzzles/Animation.html">ссылке</a>).
+    </p>
+
+    <img src="files/puzzles/puzzles-animation.jpg" alt="Animation puzzles of Verge3D" style="max-width: 1000px">
+
+    <p>
+    Анимация также может быть реализована с использованием других блоков Puzzles - смотрите <a href="manual/ru/puzzles/Camera.html">Camera</a> и <a href="manual/ru/puzzles/Time.html">Time</a> puzzles.
+    </p>
+
+    <h2>Остались вопросы?</h2>
+
+    <p>Задайте их на нашем <a href="https://www.soft8soft.com/ru/форумы/" target="_blank">форуме</a>!</p>
+
+
+  </article>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(46001298, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); ym(46001298, 'addFileExtension', 'xz');</script> <noscript><div><img src="https://mc.yandex.ru/watch/46001298" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        <div class="copyright">© <a href="https://www.soft8soft.com/ru" target="_blank">Soft8Soft – трёхмерные решения для сайтов</a><div>Последнее обновление: 29 августа 2022 г.</div></div></body></html>
